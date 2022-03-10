@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         categoryAdapter = new CategoryAdapter(this,categoryDataList);
         list_categorias.setAdapter(categoryAdapter);
 
+        /*
+        dsnuajdkjanjnjkasd
+         */
         //soy danny
         //Soy Jose
     }
