@@ -51,5 +51,6 @@ public class MainActivity extends AppCompatActivity {
         list_categorias.setAdapter(categoryAdapter);
 
         //soy danny
+        //Soy Jose
     }
 }
