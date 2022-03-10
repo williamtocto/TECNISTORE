@@ -54,5 +54,9 @@ public class MainActivity extends AppCompatActivity {
         dsnuajdkjanjnjkasd
          */
         //soy danny
+<<<<<<< Updated upstream
+=======
+        //escibir yo boris en jose
+>>>>>>> Stashed changes
     }
 }
