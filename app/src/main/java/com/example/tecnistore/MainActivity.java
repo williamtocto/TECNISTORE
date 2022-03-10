@@ -59,5 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
         //Soy Jose,william
 
+
+    }
+
+    public void hola(){
+        String hola;
     }
 }
