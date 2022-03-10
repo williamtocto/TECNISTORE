@@ -49,5 +49,7 @@ public class MainActivity extends AppCompatActivity {
         list_categorias.setLayoutManager(layoutManager);
         categoryAdapter = new CategoryAdapter(this,categoryDataList);
         list_categorias.setAdapter(categoryAdapter);
+
+        //soy danny
     }
 }
