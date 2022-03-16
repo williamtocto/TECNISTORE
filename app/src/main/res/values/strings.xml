@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TECNISTORE</string>
+    <string name="titulo_btn_sign_in">Sign In</string>
+    <string name="titulo_btn_sign_up">Sign Up</string>
+    <string name="hint_txt_nombre">Nombre</string>
+    <string name="hint_txt_apellido">Apellido</string>
+    <string name="titulo_btn_sign_up_siguiente">Siguiente</string>
 </resources>
