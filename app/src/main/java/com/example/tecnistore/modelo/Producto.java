@@ -2,37 +2,40 @@ package com.example.tecnistore.modelo;
 
 public class Producto {
 
-    private Long id_producto;
-    private String nombre_producto;
+    private int idProducto;
+    private String nombre;
     private int stock;
-    private String url_img;
-    private String detalleProducto;
-    private double precioProducto;
+    private String fotoUrl;
+    private String descripcion;
+    private double precio;
 
     public Producto() {
     }
 
-    public Producto(Long id_producto, String nombre_producto, int stock, String url_img) {
-        this.id_producto = id_producto;
-        this.nombre_producto = nombre_producto;
+    public Producto(int idProducto, String nombre, int stock, String fotoUrl, String descripcion, double precio) {
+
+        this.idProducto = idProducto;
+        this.nombre = nombre;
         this.stock = stock;
-        this.url_img = url_img;
+        this.fotoUrl = fotoUrl;
+        this.descripcion = descripcion;
+        this.precio = precio;
     }
 
-    public Long getId_producto() {
-        return id_producto;
+    public int getIdProducto() {
+        return idProducto;
     }
 
-    public void setId_producto(Long id_producto) {
-        this.id_producto = id_producto;
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
     }
 
-    public String getNombre_producto() {
-        return nombre_producto;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombre_producto(String nombre_producto) {
-        this.nombre_producto = nombre_producto;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getStock() {
@@ -43,27 +46,27 @@ public class Producto {
         this.stock = stock;
     }
 
-    public String getUrl_img() {
-        return url_img;
+    public String getFotoUrl() {
+        return fotoUrl;
     }
 
-    public void setUrl_img(String url_img) {
-        this.url_img = url_img;
+    public void setFotoUrl(String fotoUrl) {
+        this.fotoUrl = fotoUrl;
     }
 
-    public String getDetalleProducto() {
-        return detalleProducto;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDetalleProducto(String detalleProducto) {
-        this.detalleProducto = detalleProducto;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public double getPrecioProducto() {
-        return precioProducto;
+    public double getPrecio() {
+        return precio;
     }
 
-    public void setPrecioProducto(double precioProducto) {
-        this.precioProducto = precioProducto;
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 }

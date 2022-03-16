@@ -10,10 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.tecnistore.adapter.CategoryAdapter;
 import com.example.tecnistore.api.servicioApi;
 import com.example.tecnistore.modelo.Categoria;
-import  static com.example.tecnistore.R.drawable.*;
+
+
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.tecnistore.R.drawable.*;
 
 public class home extends AppCompatActivity {
 

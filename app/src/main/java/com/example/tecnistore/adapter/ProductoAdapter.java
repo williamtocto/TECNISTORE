@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.tecnistore.R;
 import com.example.tecnistore.modelo.Producto;
 import com.squareup.picasso.Picasso;
@@ -34,12 +35,12 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.Produc
 
     @Override
     public void onBindViewHolder(@NonNull ProductoViewHolder holder, int position) {
-        holder.nombreProdcuto.setText(prodcutoList.get(position).getNombre_producto());
-        holder.detalleProducto.setText(prodcutoList.get(position).getDetalleProducto());
-        holder.precioProdcuto.setText(String.valueOf(prodcutoList.get(position).getPrecioProducto()));
+        holder.nombreProdcuto.setText(prodcutoList.get(position).getNombre());
+        holder.detalleProducto.setText(prodcutoList.get(position).getDescripcion());
+        holder.precioProdcuto.setText(String.valueOf(prodcutoList.get(position).getPrecio()));
 
         Picasso.get()
-                .load(prodcutoList.get(position).getUrl_img())
+                .load(prodcutoList.get(position).getFotoUrl())
                 .error(R.mipmap.ic_launcher)
                 .into(holder.productoImg);
     }

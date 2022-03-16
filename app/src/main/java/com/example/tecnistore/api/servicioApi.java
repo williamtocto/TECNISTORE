@@ -40,9 +40,9 @@ public class servicioApi {
     }
 
     public void datosList(){
-        //String URL="https://jsonplaceholder.typicode.com/users";
+        String URL="https://tecnistoreaapi.rj.r.appspot.com/producto/read";
         //String URL=VARIABLE_GLOBAL+".ngrok.io/apiTienda/verProducto";
-        JsonArrayRequest usersJSON= new JsonArrayRequest("", new Response.Listener<JSONArray>() {
+        JsonArrayRequest usersJSON= new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 try {
@@ -70,9 +70,9 @@ public class servicioApi {
 
             jsonObject= myJSON.getJSONObject(i);
 
-            producto.setNombre_producto(jsonObject.getString("name"));
-            /*producto.setDetalleProducto(jsonObject.getString("descripcion"));
-            producto.setPrecioProducto(jsonObject.getDouble("costo"));*/
+            producto.setNombre(jsonObject.getString("nombre"));
+            producto.setDescripcion(jsonObject.getString("descripcion"));
+            producto.setPrecio(jsonObject.getDouble("precio"));
 
             productos.add(producto);
 
