@@ -5,10 +5,21 @@
     <string name="hint_txt_nombre">Nombre</string>
     <string name="hint_txt_apellido">Apellido</string>
     <string name="titulo_btn_sign_up_siguiente">Siguiente</string>
+    <string name="txt_usuario">Usuario</string>
+    <string name="txt_clave">clave</string>
     <string name="hint_txt_telefono">Telefono o Celular</string>
     <string name="hint_txt_email">Email</string>
     <string name="hint_txt_cedula">Cedula</string>
     <string name="hint_txt_direccion">Dirección Domicilio</string>
     <string name="titulo_home_productos">Productos</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>

@@ -50,7 +50,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
-
             categoryImage = itemView.findViewById(R.id.categoryImage);
 
         }

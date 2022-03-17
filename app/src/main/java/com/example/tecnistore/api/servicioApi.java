@@ -73,6 +73,7 @@ public class servicioApi {
             producto.setNombre(jsonObject.getString("nombre"));
             producto.setDescripcion(jsonObject.getString("descripcion"));
             producto.setPrecio(jsonObject.getDouble("precio"));
+            producto.setFotoUrl(jsonObject.getString("fotoUrl"));
 
             productos.add(producto);
 
