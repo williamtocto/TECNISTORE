@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.tecnistore.R;
 import com.example.tecnistore.modelo.Producto;
 import com.squareup.picasso.Picasso;
@@ -28,7 +27,7 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.Produc
     @NonNull
     @Override
     public ProductoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.lista_productos, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_producto, parent, false);
 
         return new ProductoViewHolder(view);
     }

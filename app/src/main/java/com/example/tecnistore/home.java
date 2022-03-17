@@ -35,7 +35,6 @@ public class home extends AppCompatActivity {
 
         /*Llamado del componete*/
         list_categorias = findViewById(R.id.list_categorias);
-        allCategory = findViewById(R.id.ver_mas);
         recyclerViewProdcutos= findViewById(R.id.listProductos);
 
         /*Cargo info de las categorias*/
@@ -48,8 +47,8 @@ public class home extends AppCompatActivity {
         categoryList.add(new Categoria(6, ic_home_fruits));
 
         setCategoryRecycler(categoryList);
-
         servicioApi service= new servicioApi(this,recyclerViewProdcutos);
+
 
     }
 
@@ -63,10 +62,8 @@ public class home extends AppCompatActivity {
     public void enviarMensaje(View view){
 
         Intent window_mensaje= new Intent(this, home.class);
-
-        //window_mensaje.putExtra("mensaje","Hola Mundo)");
-
         startActivity(window_mensaje);
-
     }
+
+
 }

@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">TECNISTORE</string>
+    <string name="app_name">tecniTienda</string>
     <string name="titulo_btn_sign_in">Sign In</string>
     <string name="titulo_btn_sign_up">Sign Up</string>
     <string name="hint_txt_nombre">Nombre</string>
     <string name="hint_txt_apellido">Apellido</string>
     <string name="titulo_btn_sign_up_siguiente">Siguiente</string>
+    <string name="hint_txt_telefono">Telefono o Celular</string>
+    <string name="hint_txt_email">Email</string>
+    <string name="hint_txt_cedula">Cedula</string>
+    <string name="hint_txt_direccion">Dirección Domicilio</string>
+    <string name="titulo_home_productos">Productos</string>
+
 </resources>
