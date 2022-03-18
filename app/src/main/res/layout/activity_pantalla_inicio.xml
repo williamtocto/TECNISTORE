@@ -23,7 +23,7 @@
         <Button
                 android:text="@string/titulo_btn_sign_in"
                 android:layout_width="230dp"
-                android:layout_height="70dp" android:id="@+id/button5" android:layout_marginStart="53dp"
+                android:layout_height="70dp" android:id="@+id/btn_sign_in" android:layout_marginStart="53dp"
                 android:layout_marginTop="30dp" android:textSize="24sp" android:fontFamily="sans-serif-medium"
                 app:cornerRadius="50dp" android:backgroundTint="@color/sign_in_color"/>
         <Button

@@ -27,18 +27,17 @@ private TextView txtUsuario,txtClave;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
-        progressBar=findViewById(R.id.progressBar);
         btn_ingresa=findViewById(R.id.btn_sign_up);
         txtUsuario=findViewById(R.id.textUsuario);
         txtClave=findViewById(R.id.txt_clave);
 
-        btn_ingresa.setOnClickListener(new View.OnClickListener() {
+        /*btn_ingresa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new LoginAdapter((Validacion_user) Inicio_Sesion.this).execute(txtUsuario.getText().toString(),
                         txtClave.getText().toString(), 3000);
             }
-        });
+        });*/
 
     }
 

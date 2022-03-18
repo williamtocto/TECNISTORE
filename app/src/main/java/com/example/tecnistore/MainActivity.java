@@ -13,6 +13,7 @@ import com.example.tecnistore.Sign_up_1;
 
 public class MainActivity extends AppCompatActivity {
     private Button btn_signUp;
+    private Button btn_signIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +22,22 @@ public class MainActivity extends AppCompatActivity {
         startPresentacion();
 
         btn_signUp= findViewById(R.id.btn_sign_up);
+        btn_signIn= findViewById(R.id.btn_sign_in);
 
         btn_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                viewIngresoNombres();
+                viewSignUp();
             }
         });
+
+        btn_signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewSignIn();
+            }
+        });
+
     }
 
     private void startPresentacion(){
@@ -39,10 +49,17 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(getApplicationContext()).load(uri).into(imageView);
     }
 
-    private void viewIngresoNombres(){
+    private void viewSignUp(){
 
-        Intent view_signUp1= new Intent(this, Sign_up_1.class);
-        startActivity(view_signUp1);
+        Intent view_signIn= new Intent(this, Sign_up_1.class);
+        startActivity(view_signIn);
+
+    }
+
+    private void viewSignIn(){
+
+        Intent view_signIn= new Intent(this, Inicio_Sesion.class);
+        startActivity(view_signIn);
 
     }
 }
