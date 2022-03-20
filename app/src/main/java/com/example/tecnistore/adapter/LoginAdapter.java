@@ -36,7 +36,7 @@ public class LoginAdapter extends  AsyncTask < Object,Void, Boolean> {
         String user=objects[0].toString();
         String pass=objects[1].toString();
             for (int i=0; i<array.size();i++){
-                if (array.get(i).getUsuario().equals(user) && array.get(i).getClave().equals(pass) &&  array.get(i).getTipo_usuario().equals("cliente")){
+                if (array.get(i).getUsuario().equals(user) && array.get(i).getClave().equals(pass)){
                     return true;
                 }
             }

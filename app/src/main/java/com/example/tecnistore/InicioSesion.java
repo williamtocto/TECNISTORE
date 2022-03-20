@@ -94,7 +94,6 @@ private TextView txtUsuario,txtClave;
                 json = array.getJSONObject(i);
                 post.setUsuario(json.getString("usuario"));
                 post.setClave(json.getString("clave"));
-                post.setTipo_usuario(json.getString("tipoUsuario"));
                 arrayDatos.add(post);
             } catch (JSONException e) {
                 e.printStackTrace();
