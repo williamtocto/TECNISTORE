@@ -3,30 +3,42 @@ package com.example.tecnistore.adapter;
 
 import android.os.AsyncTask;
 
+import com.example.tecnistore.InicioSesion;
+import com.example.tecnistore.home;
+import com.example.tecnistore.modelo.Login;
 import com.example.tecnistore.validaciones.Validacion_user;
 
-public class LoginAdapter extends AsyncTask <Object, Void, Boolean> {
-    private Validacion_user comunicacion;
+import java.util.ArrayList;
 
-    public LoginAdapter(Validacion_user comunicacion) {
+
+public class LoginAdapter extends  AsyncTask < Object,Void, Boolean> {
+
+    private Validacion_user comunicacion;
+    ArrayList<Login> array= InicioSesion.arrayDatos;
+
+    //Contructor
+    public LoginAdapter( Validacion_user comunicacion) {
         this.comunicacion = comunicacion;
     }
 
+    // Codigo que se ejcuta antes de comenzar el hilo
     @Override
     protected void onPreExecute() {
         comunicacion.toggleProgressBar(true);
     }
 
+
+    // Codigo de segundo plano evaluar credenciales de usuario
     @Override
     protected Boolean doInBackground(Object... objects) {
-        try {
-            Thread.sleep((int)objects[2]);
-            String user = (String) objects[0];
-            String pass = (String) objects[1];
-            if (user.equals("admin") && pass.equals("admin")){
-                return true;
-            }else{
-                return false;
+        try{
+        Thread.sleep((int)objects[2]);
+        String user=objects[0].toString();
+        String pass=objects[1].toString();
+            for (int i=0; i<array.size();i++){
+                if (array.get(i).getUsuario().equals(user) && array.get(i).getClave().equals(pass)){
+                    return true;
+                }
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -34,16 +46,20 @@ public class LoginAdapter extends AsyncTask <Object, Void, Boolean> {
         return false;
     }
 
+
+    // Codigo despues del hilo
     @Override
     protected void onPostExecute(Boolean bo) {
         if (bo){
+            this.comunicacion.lanzarActividad(home.class);
             this.comunicacion.showMessage("Datos Correctos");
             this.comunicacion.toggleProgressBar(false);
         }else{
             this.comunicacion.showMessage("Datos Incorrectos");
-
+            this.comunicacion.toggleProgressBar(false);
         }
     }
+
 
 
 }

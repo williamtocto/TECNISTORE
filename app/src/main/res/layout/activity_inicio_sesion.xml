@@ -5,7 +5,7 @@
                                                    android:id="@+id/sign_in"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
-                                                   tools:context=".Inicio_Sesion"
+                                                   tools:context=".InicioSesion"
                                                    android:background="@drawable/skin_sign_in">
 
     <androidx.cardview.widget.CardView
@@ -54,22 +54,23 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-            android:id="@+id/btn_inicio_sesion"
-            android:layout_width="230dp"
-            android:layout_height="70dp"
-            android:layout_marginBottom="48dp"
-            android:backgroundTint="@color/sign_up_color"
-            android:elevation="50dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/titulo_btn_sign_up_siguiente"
-            android:textColor="#455A64"
-            android:textSize="24sp"
-            app:cornerRadius="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck"/>
+        android:id="@+id/btn_inicio_sesion"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/sign_up_color"
+        android:elevation="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/titulo_btn_sign_up_siguiente"
+        android:textColor="#455A64"
+        android:textSize="24sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
     <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="298dp"
@@ -102,18 +103,32 @@
                     app:boxStrokeColor="@null">
 
                 <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="254dp"
-                        android:layout_height="58dp"
-                        android:id="@+id/txt_clave"
-                        android:hint="@string/login_txt_password"
-                        android:background="@null"
-                        android:ems="10"
-                        android:inputType="textPassword"
-                        android:layout_marginStart="38dp" tools:ignore="TouchTargetSizeCheck"
-                        android:backgroundTint="@android:color/transparent" android:layout_marginTop="7dp"
-                />
+                    android:id="@+id/txt_clave"
+                    android:layout_width="254dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@null"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/login_txt_password"
+                    android:inputType="textPassword"
+                    tools:ignore="TouchTargetSizeCheck" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

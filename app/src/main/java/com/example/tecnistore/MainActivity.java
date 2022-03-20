@@ -27,17 +27,15 @@ public class MainActivity extends AppCompatActivity {
         btn_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                viewSignUp();
+                viewIngresoNombres();
             }
         });
-
         btn_signIn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                viewSignIn();
+            public void onClick(View view) {
+                validarUsuario();
             }
         });
-
     }
 
     private void startPresentacion(){
@@ -48,18 +46,15 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse(urlGif);
         Glide.with(getApplicationContext()).load(uri).into(imageView);
     }
-
-    private void viewSignUp(){
-
-        Intent view_signIn= new Intent(this, Sign_up_1.class);
-        startActivity(view_signIn);
-
+    private void validarUsuario(){
+        Intent view_inicioSesion= new Intent(this, InicioSesion.class);
+        startActivity(view_inicioSesion);
     }
 
-    private void viewSignIn(){
+    private void viewIngresoNombres(){
 
-        Intent view_signIn= new Intent(this, Inicio_Sesion.class);
-        startActivity(view_signIn);
+        Intent view_signUp1= new Intent(this, Sign_up_1.class);
+        startActivity(view_signUp1);
 
     }
 }

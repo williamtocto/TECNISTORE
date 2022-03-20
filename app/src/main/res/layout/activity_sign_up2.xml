@@ -27,7 +27,7 @@
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView3"
-            app:layout_constraintBottom_toTopOf="@+id/btn_inicio_sesion"
+            app:layout_constraintBottom_toTopOf="@+id/btn_signUp3"
             app:cardCornerRadius="20dp" app:cardElevation="20dp" app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintVertical_bias="0.435">
         <EditText
@@ -42,7 +42,7 @@
     <Button
             android:text="@string/titulo_btn_sign_up_siguiente"
             android:layout_width="230dp"
-            android:layout_height="70dp" android:id="@+id/btn_inicio_sesion"
+            android:layout_height="70dp" android:id="@+id/btn_signUp3"
             android:textSize="24sp" android:fontFamily="sans-serif-medium"
             app:cornerRadius="50dp" android:backgroundTint="@color/sign_up_color"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
