@@ -65,8 +65,7 @@ private TextView txtUsuario,txtClave;
 
     private void obtenerDatos(){
 
-        String direccion="https://tecnistoreaapi.rj.r.appspot.com/usuario/read";
-
+        String direccion="https://tecnistoreaapi.rj.r.appspot.com/usuario";
         JsonArrayRequest jsonArrayRequest= new JsonArrayRequest(direccion, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -79,12 +78,9 @@ private TextView txtUsuario,txtClave;
             }
         });
         Request<JSONArray> add = Volley.newRequestQueue(this).add(jsonArrayRequest);
-
-
     }
 
     private void pasarJson( JSONArray array) {
-
 
         for (int i = 0; i < array.length(); i++) {
             Login post = new Login();
@@ -101,7 +97,6 @@ private TextView txtUsuario,txtClave;
         }
 
     }
-
 
     @Override
     public void toggleProgressBar(boolean status) {

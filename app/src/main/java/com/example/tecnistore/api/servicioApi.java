@@ -40,7 +40,7 @@ public class servicioApi {
     }
 
     public void datosList(){
-        String URL="https://tecnistoreaapi.rj.r.appspot.com/producto/read";
+        String URL="https://tecnistoreaapi.rj.r.appspot.com/producto";
         //String URL=VARIABLE_GLOBAL+".ngrok.io/apiTienda/verProducto";
         JsonArrayRequest usersJSON= new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
             @Override
