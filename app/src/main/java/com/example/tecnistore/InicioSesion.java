@@ -35,7 +35,7 @@ import java.util.ArrayList;
 public class InicioSesion extends AppCompatActivity implements Validacion_user{
 
 
-    public static ArrayList<Login> arrayDatos =new ArrayList<Login>();;
+    public static ArrayList<Login> arrayDatos =new ArrayList<Login>();
 
 
 private ProgressBar progressBar;

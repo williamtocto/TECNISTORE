@@ -10,7 +10,6 @@ import com.example.tecnistore.validaciones.Validacion_user;
 
 import java.util.ArrayList;
 
-
 public class LoginAdapter extends  AsyncTask < Object,Void, Boolean> {
 
     private Validacion_user comunicacion;
